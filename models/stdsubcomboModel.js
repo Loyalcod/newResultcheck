@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 
 const stdSbjComboSchema = mongoose.Schema({
+
     studentId: {type: mongoose.Types.ObjectId, ref: 'student'},
     subjectId: {type: mongoose.Types.ObjectId, ref: 'subject'},
 
@@ -8,6 +9,7 @@ const stdSbjComboSchema = mongoose.Schema({
         type: Boolean,
         default: true
     }
+    
 },{timestamps: true})
 
 

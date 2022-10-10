@@ -37,6 +37,10 @@ server.use('/student',studentRouter)
 const subjectRouter = require("./router/subjectRouter")
 server.use('/subject',subjectRouter)
 
+/* ---------------------------------------------- student subject combination router crude ---------------------------------------------- */
+const comboRouter = require("./router/stdSubComboRouter")
+server.use('/combo',comboRouter)
+
 server.listen(port,()=>{
     console.log("this yaaya server is running")
 })
