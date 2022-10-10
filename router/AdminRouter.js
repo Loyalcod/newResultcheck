@@ -9,7 +9,7 @@ const router = express.Router()
 router.post("/",registerAdmin)
 
 /* --------------------------------------------------- this is the login admin router --------------------------------------------------- */
-router.get('/login',loginAdmin)
+router.post('/login',loginAdmin)
 
 /* ----------------------------------------------- this is the refresh login admin router ----------------------------------------------- */
 router.get('/refresh',refreshLoginAdmin)
