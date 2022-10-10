@@ -14,4 +14,4 @@ const resultSchema = mongoose.Schema({
 
 
 
-module.exports = mongoose.module('result',resultSchema)
+module.exports = mongoose.model('result',resultSchema)
