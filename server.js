@@ -20,6 +20,10 @@ server.get('/',(req,res)=>{
     res.send("this is the server side")
 })
 
+/* --------------------------------------------------------- Admin router crude --------------------------------------------------------- */
+const AdminRouter = require("./router/AdminRouter")
+server.use('/admin',AdminRouter)
+
 
 
 
