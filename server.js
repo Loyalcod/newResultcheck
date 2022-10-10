@@ -28,6 +28,10 @@ server.use('/admin',AdminRouter)
 const StudentClassRouter = require("./router/studentClassRouter")
 server.use('/class',StudentClassRouter)
 
+/* -------------------------------------------------------- student router crude -------------------------------------------------------- */
+const studentRouter = require("./router/studentRouter")
+server.use('/student',studentRouter)
+
 
 server.listen(port,()=>{
     console.log("this yaaya server is running")
