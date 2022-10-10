@@ -29,7 +29,11 @@ const studentSchema = mongoose.Schema({
         required: true
     },
 
-    studentClass: {type: mongoose.Types.ObjectId, ref: 'classes'}
+    studentClass: {type: mongoose.Types.ObjectId, ref: 'classes'},
+
+    subjectId: [{type: mongoose.Types.ObjectId, ref: 'subject'}],
+    resultId: [{type: mongoose.Types.ObjectId, ref: 'result'}],
+    
 }, {timestamps: true})
 
 
