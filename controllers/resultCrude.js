@@ -78,6 +78,8 @@ exports.checkResult = async(req,res)=>{
                 path: 'subjectId'
             }
         })
+
+        
         res.json(checkmyresult)
         
     } catch (error) {
